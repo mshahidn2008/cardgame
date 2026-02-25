@@ -118,10 +118,11 @@ export default function QuizMode() {
 
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 flex flex-col gap-5">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="numQuestions" className="block text-sm font-medium text-gray-700 mb-1">
               Number of Questions
             </label>
             <input
+              id="numQuestions"
               type="number"
               min={1}
               max={cards.length}
